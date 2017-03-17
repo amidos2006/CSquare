@@ -1,0 +1,34 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Node Server",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/server/server.js",
+            "stopOnEntry": false,
+            "args": [],
+            "cwd": "${workspaceRoot}/.",
+            "runtimeExecutable": null,
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "console": "externalTerminal",
+            "sourceMaps": false,
+            "outDir": null
+        },
+        {
+            "name": "Launch Chrome with sourcemaps",
+            "type": "chrome",
+            "request": "launch",
+            "port": 5858,
+            "url": "http://localhost:5858/",
+            "sourceMaps": true,
+            "userDataDir": "${workspaceRoot}/.vscode/chrome",
+            "webRoot": "${workspaceRoot}/bin/index.html"
+        }
+    ]
+}
